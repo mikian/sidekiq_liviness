@@ -2,15 +2,15 @@
 
 require "sidekiq"
 require "sidekiq/api"
-require_relative "sidekiq_liviness/server"
-require_relative "sidekiq_liviness/version"
+require_relative "sidekiq_liveness/server"
+require_relative "sidekiq_liveness/version"
 
-module SidekiqLiviness
+module SidekiqLiveness
   def self.start
     Sidekiq.configure_server do |config|
       config.on(:startup) do
         @server_pid = fork do
-          SidekiqLiviness::Server.run!
+          SidekiqLiveness::Server.run!
         end
       end
 

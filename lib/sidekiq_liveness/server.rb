@@ -2,7 +2,7 @@
 
 require "rack"
 
-module SidekiqLiviness
+module SidekiqLiveness
   class Server
     class << self
       def run!
@@ -16,7 +16,7 @@ module SidekiqLiviness
       def call(env)
         if Rack::Request.new(env).path != path
           [404, {}, [""]]
-        elsif SidekiqLiviness.alive?
+        elsif SidekiqLiveness.alive?
           [200, {}, [""]]
         else
           [500, {}, [""]]
@@ -26,11 +26,11 @@ module SidekiqLiviness
       private
 
       def port
-        ENV.fetch("SIDEKIQ_LIVINESS_PORT") { 7433 }
+        ENV.fetch("SIDEKIQ_LIVENESS_PORT") { 7433 }
       end
 
       def path
-        ENV.fetch("SIDEKIQ_LIVINESS_PATH") { "/healthz" }
+        ENV.fetch("SIDEKIQ_LIVENESS_PATH") { "/healthz" }
       end
     end
   end

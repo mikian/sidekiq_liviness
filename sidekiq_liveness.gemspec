@@ -1,17 +1,17 @@
 # frozen_string_literal: true
 
-require_relative "lib/sidekiq_liviness/version"
+require_relative "lib/sidekiq_liveness/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "sidekiq_liviness"
-  spec.version = SidekiqLiviness::VERSION
+  spec.name = "sidekiq_liveness"
+  spec.version = SidekiqLiveness::VERSION
   spec.authors = ["Mikko Kokkonen"]
   spec.email = ["mikko.kokkonen@itsmycargo.com"]
   spec.licenses = ["MIT"]
 
   spec.summary = "Liveness probe for Sidekiq on Kubernetes deployments."
-  spec.description = "SidekiqLiviness offers a solution to add liveness probe of a Sidekiq instance."
-  spec.homepage = "https://github.com/mikian/sidekiq_liviness"
+  spec.description = "SidekiqLiveness offers a solution to add liveness probe of a Sidekiq instance."
+  spec.homepage = "https://github.com/mikian/sidekiq_liveness"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["bug_tracker_uri"] = "#{spec.homepage}/issues"
