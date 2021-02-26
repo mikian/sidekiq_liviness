@@ -22,7 +22,6 @@ module SidekiqLiveness
   end
 
   def self.alive?
-    # Find current process if exists
     process = Sidekiq::ProcessSet.new.find { |p| p["pid"] == ::Process.ppid }
     return false unless process
 

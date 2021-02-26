@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary = "Liveness probe for Sidekiq on Kubernetes deployments."
   spec.description = "SidekiqLiveness offers a solution to add liveness probe of a Sidekiq instance."
   spec.homepage = "https://github.com/mikian/sidekiq_liveness"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
   spec.metadata["bug_tracker_uri"] = "#{spec.homepage}/issues"
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/main/CHANGELOG.md"

@@ -10,16 +10,15 @@ module SidekiqLiveness
 
         Signal.trap("TERM") { handler.shutdown }
 
-        handler.run(self, Port: port, Host: "0.0.0.0")
+        handler.run(self, Port: port, Host: host)
       end
 
       def call(env)
-        if Rack::Request.new(env).path != path
-          [404, {}, [""]]
-        elsif SidekiqLiveness.alive?
-          [200, {}, [""]]
+        case Rack::Request.new(env).path
+        when "/healthz"
+          [SidekiqLiveness.alive? ? 200 : 500, {}, [""]]
         else
-          [500, {}, [""]]
+          [404, {}, [""]]
         end
       end
 
@@ -29,8 +28,8 @@ module SidekiqLiveness
         ENV.fetch("SIDEKIQ_LIVENESS_PORT") { 7433 }
       end
 
-      def path
-        ENV.fetch("SIDEKIQ_LIVENESS_PATH") { "/healthz" }
+      def host
+        ENV.fetch("SIDEKIQ_LIVENESS_HOST") { "0.0.0.0" }
       end
     end
   end
