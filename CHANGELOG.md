@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.1](https://www.github.com/mikian/sidekiq_liveness/compare/v0.4.0...v0.4.1) (2021-02-26)
+
+
+### Bug Fixes
+
+* Cleanup codebase, allow customise via ENV ([2b7be4f](https://www.github.com/mikian/sidekiq_liveness/commit/2b7be4f5258a4a3473abb90757031915c3263d1c))
+
 ## [0.4.0](https://www.github.com/mikian/sidekiq_liveness/compare/v0.3.0...v0.4.0) (2021-02-26)
 
 
