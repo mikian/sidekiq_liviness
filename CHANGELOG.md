@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/mikian/sidekiq_liviness/compare/v0.1.0...v0.2.0) (2021-02-26)
+
+
+### Features
+
+* release to RubyGems ([99e1f31](https://www.github.com/mikian/sidekiq_liviness/commit/99e1f31bbd5777ec612f133acf9bafe7feaf62a7))
+
 ## 0.1.0 (2021-02-26)
 
 
