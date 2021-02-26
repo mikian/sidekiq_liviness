@@ -14,7 +14,7 @@ module SidekiqLiveness
         end
       end
 
-      config.on(:shutdown) do
+      at_exit do
         Process.kill("TERM", @server_pid) unless @server_pid.nil?
         Process.wait(@server_pid) unless @server_pid.nil?
       end
