@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.0](https://www.github.com/mikian/sidekiq_liveness/compare/v0.3.0...v0.4.0) (2021-02-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* build release
+
+### Bug Fixes
+
+* build release ([341f9a2](https://www.github.com/mikian/sidekiq_liveness/commit/341f9a23e89c75d4f4d69ae039c60da87aa3975f))
+
 ## [0.3.0](https://www.github.com/mikian/sidekiq_liviness/compare/v0.2.0...v0.3.0) (2021-02-26)
 
 
