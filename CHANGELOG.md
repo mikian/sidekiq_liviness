@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/mikian/sidekiq_liveness/compare/v0.4.1...v0.5.0) (2021-02-26)
+
+
+### Features
+
+* keep healthz responsing until exit ([c5a3825](https://www.github.com/mikian/sidekiq_liveness/commit/c5a3825de9e97c4a5853cbfb08e4d9c5829cc08c))
+
 ### [0.4.1](https://www.github.com/mikian/sidekiq_liveness/compare/v0.4.0...v0.4.1) (2021-02-26)
 
 
