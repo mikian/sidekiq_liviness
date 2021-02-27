@@ -17,9 +17,6 @@ module SidekiqLiveness
         case Rack::Request.new(env).path
         when "/healthz"
           [SidekiqLiveness.alive? ? 200 : 500, {}, [""]]
-        when "/stop"
-          SidekiqLiveness.stop!
-          [200, {}, [""]]
         else
           [404, {}, [""]]
         end
