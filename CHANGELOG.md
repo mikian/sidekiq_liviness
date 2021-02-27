@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.1](https://www.github.com/mikian/sidekiq_liveness/compare/v0.5.0...v0.5.1) (2021-02-27)
+
+
+### Bug Fixes
+
+* removed unnecessary endpoint ([3ca48cc](https://www.github.com/mikian/sidekiq_liveness/commit/3ca48cc62e9c9c76003fa4ff66f2a0970d0151bb))
+
 ## [0.5.0](https://www.github.com/mikian/sidekiq_liveness/compare/v0.4.1...v0.5.0) (2021-02-26)
 
 
